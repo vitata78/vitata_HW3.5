@@ -13,6 +13,11 @@
 		6941497224DA11A40039E718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6941497124DA11A40039E718 /* Assets.xcassets */; };
 		6941497524DA11A40039E718 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6941497424DA11A40039E718 /* Preview Assets.xcassets */; };
 		6941497824DA11A40039E718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6941497624DA11A40039E718 /* LaunchScreen.storyboard */; };
+		6941498024DA11D80039E718 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941497F24DA11D80039E718 /* Person.swift */; };
+		6941498224DA12040039E718 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941498124DA12040039E718 /* DataManager.swift */; };
+		6978BA2124DA47B7001CA69D /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978BA2024DA47B7001CA69D /* PersonView.swift */; };
+		69F283C124DA218B00406417 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F283C024DA218B00406417 /* ContactsView.swift */; };
+		69F283C324DA219400406417 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F283C224DA219400406417 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		6941497424DA11A40039E718 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6941497724DA11A40039E718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6941497924DA11A40039E718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6941497F24DA11D80039E718 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6941498124DA12040039E718 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6978BA2024DA47B7001CA69D /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		69F283C024DA218B00406417 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		69F283C224DA219400406417 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +66,10 @@
 		6941496A24DA11A10039E718 /* vitata_HW3.5 */ = {
 			isa = PBXGroup;
 			children = (
-				6941496B24DA11A10039E718 /* AppDelegate.swift */,
-				6941496D24DA11A10039E718 /* SceneDelegate.swift */,
-				6941496F24DA11A10039E718 /* ContentView.swift */,
-				6941497124DA11A40039E718 /* Assets.xcassets */,
-				6941497624DA11A40039E718 /* LaunchScreen.storyboard */,
+				69F283C524DA21A800406417 /* Data */,
+				69F283C624DA21AE00406417 /* Model */,
+				69F283C424DA219B00406417 /* Views */,
+				69F283C724DA21D500406417 /* Other */,
 				6941497924DA11A40039E718 /* Info.plist */,
 				6941497324DA11A40039E718 /* Preview Content */,
 			);
@@ -73,6 +82,44 @@
 				6941497424DA11A40039E718 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69F283C424DA219B00406417 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6941496F24DA11A10039E718 /* ContentView.swift */,
+				6978BA2024DA47B7001CA69D /* PersonView.swift */,
+				69F283C024DA218B00406417 /* ContactsView.swift */,
+				69F283C224DA219400406417 /* DetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69F283C524DA21A800406417 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6941498124DA12040039E718 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		69F283C624DA21AE00406417 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6941497F24DA11D80039E718 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69F283C724DA21D500406417 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6941496D24DA11A10039E718 /* SceneDelegate.swift */,
+				6941496B24DA11A10039E718 /* AppDelegate.swift */,
+				6941497124DA11A40039E718 /* Assets.xcassets */,
+				6941497624DA11A40039E718 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +149,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "APNET HQ LLC";
 				TargetAttributes = {
 					6941496724DA11A10039E718 = {
@@ -147,7 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6941496C24DA11A10039E718 /* AppDelegate.swift in Sources */,
+				69F283C324DA219400406417 /* DetailsView.swift in Sources */,
+				6941498224DA12040039E718 /* DataManager.swift in Sources */,
 				6941496E24DA11A10039E718 /* SceneDelegate.swift in Sources */,
+				69F283C124DA218B00406417 /* ContactsView.swift in Sources */,
+				6978BA2124DA47B7001CA69D /* PersonView.swift in Sources */,
+				6941498024DA11D80039E718 /* Person.swift in Sources */,
 				6941497024DA11A10039E718 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +244,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +305,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
